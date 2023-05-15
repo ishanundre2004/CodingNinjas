@@ -1,0 +1,15 @@
+class Solution {
+  public:
+    string compareNM(int n, int m){
+        // code here
+        if (n>m){
+            std::cout<<"greater";
+        }
+        else if (n==m){
+            std::cout<<"equal";
+        }
+        else{
+            std::cout<<"lesser";
+        }
+    }
+};
