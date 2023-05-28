@@ -1,0 +1,23 @@
+class Solution {
+  public:
+    bool arraySortedOrNot(int arr[], int n) {
+        int previous_element=arr[0];
+        for (int i = 1; i<n; i++)
+        {
+            if (arr[i]>=previous_element)
+            {
+                previous_element = arr[i];
+                if (i==n-1)
+                {
+                    return 1;
+                }
+                
+            }
+            
+            else
+            {
+                return 0;
+            }
+        }
+    }
+};
