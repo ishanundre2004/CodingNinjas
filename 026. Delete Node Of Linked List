@@ -1,0 +1,17 @@
+Node *deleteLast(Node *list){
+
+    // Creating a dummy node 'head', and assigning it to 'list'
+    Node *head = list;
+
+    while (head->next->next != nullptr)
+    {
+        head = head->next;
+    }
+
+    // Deleting last node
+    delete head->next;
+
+    // Assigning the 'next' of second last node 'NULL'.
+    head->next = nullptr;
+    return list;
+}
